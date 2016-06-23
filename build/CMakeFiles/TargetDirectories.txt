@@ -1,0 +1,3 @@
+/home/tory/MergeSort/build/CMakeFiles/MergeSort.dir
+/home/tory/MergeSort/build/CMakeFiles/MergeSort_test.dir
+/home/tory/MergeSort/build/CMakeFiles/googletest.dir

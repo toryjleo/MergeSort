@@ -1,7 +1,6 @@
 // Actual merge sort file stolen by: Tory Leo
-
-#include<stdio.h>
 #include<stdlib.h>
+#include <stdexcept>
 
 // Function that that fuses L and R into array A
 // leftCount = number of elements in L
@@ -34,8 +33,10 @@ void MergeSort(int *A, int n) {
   int mid, i, *L, *R;
   mid = n/2;        // Finds the middle index of the array
   L = (int*)malloc(mid*sizeof(int));     // Creates leftside subarray that is size of mid number of ints
-  R = (int*)malloc((n-mid)*sizeof(int))  // Creates rightside subarray that is size of the array (n) - mid ints
-
+  R = (int*)malloc((n-mid)*sizeof(int));  // Creates rightside subarray that is size of the array (n) - mid ints
+  if(n < 1){
+    throw std::invalid_argument("ERROR: ARRAY IS EMPTY!");
+  }
   if(n < 2) return; // Base case for when the array has less than 2 elements
 
   for(i = 0; i < mid; ++i) {

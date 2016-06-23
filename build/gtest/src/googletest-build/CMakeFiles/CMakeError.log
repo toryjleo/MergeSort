@@ -1,0 +1,57 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3237609033/fast"
+make[3]: Entering directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3237609033.dir/build.make CMakeFiles/cmTryCompileExec3237609033.dir/build
+make[4]: Entering directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3237609033.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3237609033.dir/CheckSymbolExists.c.o   -c /home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3237609033
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3237609033.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3237609033.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3237609033 -rdynamic 
+CMakeFiles/cmTryCompileExec3237609033.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec3237609033] Error 1
+make[4]: Leaving directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec3237609033/fast] Error 2
+
+File /home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec517156987/fast"
+make[3]: Entering directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec517156987.dir/build.make CMakeFiles/cmTryCompileExec517156987.dir/build
+make[4]: Entering directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec517156987.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec517156987.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec517156987
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec517156987.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec517156987.dir/CheckFunctionExists.c.o  -o cmTryCompileExec517156987 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[4]: *** [cmTryCompileExec517156987] Error 1
+make[4]: Leaving directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec517156987/fast] Error 2
+make[3]: Leaving directory `/home/tory/MergeSort/build/gtest/src/googletest-build/CMakeFiles/CMakeTmp'
+
+

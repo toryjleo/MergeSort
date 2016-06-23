@@ -1,0 +1,4 @@
+/home/tory/MergeSort/build/gtest/src/googletest-build/googlemock/CMakeFiles/gmock.dir
+/home/tory/MergeSort/build/gtest/src/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+/home/tory/MergeSort/build/gtest/src/googletest-build/googlemock/gtest/CMakeFiles/gtest.dir
+/home/tory/MergeSort/build/gtest/src/googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir
