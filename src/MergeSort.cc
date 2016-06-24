@@ -1,7 +1,32 @@
-// Actual merge sort file stolen by: Tory Leo
+/*
+The MIT License (MIT)
+
+Copyright (c) 2016 Northeastern University
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+    Status API Training Shop Blog About
+*/
+
 #include<stdlib.h>
 #include <stdexcept>
-#include "MergeSort.h"
+#include "src/MergeSort.h"
 
 // Function that that fuses L and R into array A
 // leftCount = number of elements in L
@@ -32,10 +57,10 @@ void Merge(int *A, int *L, int leftCount, int *R, int rightCount) {
 void MergeSort(int *A, int n) {
   int mid, i, *L, *R;
   mid = n/2;        // Finds the middle index of the array
-  L = (int*)malloc(mid*sizeof(int));     // Creates leftside subarray that is
-  // size of mid number of ints
-  R = (int*)malloc((n-mid)*sizeof(int));  // Creates rightside subarray that is
-  // size of the array (n) - mid ints
+  L = reinterpret_cast<int*>malloc(mid*sizeof(int));     // Creates leftside
+  // subarray that is size of mid number of ints
+  R = reinterpret_cast<int*>malloc((n-mid)*sizeof(int));  // Creates rightside
+  // subarray that is size of the array (n) - mid ints
   if (n < 1) {
     throw std::invalid_argument("ERROR: ARRAY IS EMPTY!");
   }
