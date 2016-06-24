@@ -171,29 +171,29 @@ src/MergeSort.cc.s:
 	$(MAKE) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/src/MergeSort.cc.s
 .PHONY : src/MergeSort.cc.s
 
-test/my_test.o: test/my_test.cc.o
-.PHONY : test/my_test.o
+test/mergesort_test.o: test/mergesort_test.cc.o
+.PHONY : test/mergesort_test.o
 
 # target to build an object file
-test/my_test.cc.o:
-	$(MAKE) -f CMakeFiles/MergeSort_test.dir/build.make CMakeFiles/MergeSort_test.dir/test/my_test.cc.o
-.PHONY : test/my_test.cc.o
+test/mergesort_test.cc.o:
+	$(MAKE) -f CMakeFiles/MergeSort_test.dir/build.make CMakeFiles/MergeSort_test.dir/test/mergesort_test.cc.o
+.PHONY : test/mergesort_test.cc.o
 
-test/my_test.i: test/my_test.cc.i
-.PHONY : test/my_test.i
+test/mergesort_test.i: test/mergesort_test.cc.i
+.PHONY : test/mergesort_test.i
 
 # target to preprocess a source file
-test/my_test.cc.i:
-	$(MAKE) -f CMakeFiles/MergeSort_test.dir/build.make CMakeFiles/MergeSort_test.dir/test/my_test.cc.i
-.PHONY : test/my_test.cc.i
+test/mergesort_test.cc.i:
+	$(MAKE) -f CMakeFiles/MergeSort_test.dir/build.make CMakeFiles/MergeSort_test.dir/test/mergesort_test.cc.i
+.PHONY : test/mergesort_test.cc.i
 
-test/my_test.s: test/my_test.cc.s
-.PHONY : test/my_test.s
+test/mergesort_test.s: test/mergesort_test.cc.s
+.PHONY : test/mergesort_test.s
 
 # target to generate assembly for a file
-test/my_test.cc.s:
-	$(MAKE) -f CMakeFiles/MergeSort_test.dir/build.make CMakeFiles/MergeSort_test.dir/test/my_test.cc.s
-.PHONY : test/my_test.cc.s
+test/mergesort_test.cc.s:
+	$(MAKE) -f CMakeFiles/MergeSort_test.dir/build.make CMakeFiles/MergeSort_test.dir/test/mergesort_test.cc.s
+.PHONY : test/mergesort_test.cc.s
 
 # Help Target
 help:
@@ -210,9 +210,9 @@ help:
 	@echo "... src/MergeSort.o"
 	@echo "... src/MergeSort.i"
 	@echo "... src/MergeSort.s"
-	@echo "... test/my_test.o"
-	@echo "... test/my_test.i"
-	@echo "... test/my_test.s"
+	@echo "... test/mergesort_test.o"
+	@echo "... test/mergesort_test.i"
+	@echo "... test/mergesort_test.s"
 .PHONY : help
 
 

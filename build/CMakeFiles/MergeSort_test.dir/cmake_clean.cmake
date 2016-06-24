@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/MergeSort_test.dir/test/my_test.cc.o"
+  "CMakeFiles/MergeSort_test.dir/test/mergesort_test.cc.o"
   "MergeSort_test.pdb"
   "MergeSort_test"
 )

@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tory/MergeSort/test/my_test.cc" "/home/tory/MergeSort/build/CMakeFiles/MergeSort_test.dir/test/my_test.cc.o"
+  "/home/tory/MergeSort/test/mergesort_test.cc" "/home/tory/MergeSort/build/CMakeFiles/MergeSort_test.dir/test/mergesort_test.cc.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

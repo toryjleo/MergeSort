@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/tory/MergeSort/src/MergeSort.cc
-stdlib.h
--
-stdexcept
--
+/home/tory/MergeSort/src/MergeSort.h
 
-/home/tory/MergeSort/test/my_test.cc
+/home/tory/MergeSort/test/mergesort_test.cc
 gtest/gtest.h
 /home/tory/MergeSort/test/gtest/gtest.h
-../src/MergeSort.cc
-/home/tory/MergeSort/src/MergeSort.cc
+../src/MergeSort.h
+/home/tory/MergeSort/src/MergeSort.h
 
 gtest/src/googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

@@ -1,6 +1,7 @@
 // Actual merge sort file stolen by: Tory Leo
 #include<stdlib.h>
 #include <stdexcept>
+#include "MergeSort.h"
 
 // Function that that fuses L and R into array A
 // leftCount = number of elements in L
